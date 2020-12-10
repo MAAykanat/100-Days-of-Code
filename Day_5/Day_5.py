@@ -35,9 +35,7 @@ num_letters = int(input("How many letters would you like in you password?"))
 num_symbols = int(input("How many symbols would you like?")) 
 num_digits = int(input("How many digits would you like?"))
 
-result_password.append(loop_func(letters,num_letters))
-result_password.append(loop_func(symbols,num_symbols))
-result_password.append(loop_func(digits,num_digits))
+result_password = []
+result_password = [*result_password,*(loop_func(letters,num_letters)),*(loop_func(symbols,num_symbols)),*(loop_func(digits,num_digits))]
 
-print(result_password)
 printing_password(result_password)
