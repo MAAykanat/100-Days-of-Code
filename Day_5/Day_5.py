@@ -1,4 +1,4 @@
-#Day Number: 4
+#Day Number: 5
 #Day Level: Beginner
 #The topic: Python Loops
 
@@ -14,9 +14,9 @@ def printing_password(generated_password):
 
     print(password)
 
-def loop_func(list_name,lenth):
+def loop_func(list_name,length):
     generated_password = []
-    for _ in range(0,lenth):
+    for _ in range(0,length):
         random_variable = random.randint(0,(len(list_name)-1))
         generated_password.append(list_name[random_variable])
     return generated_password
